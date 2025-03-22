@@ -17,9 +17,10 @@ nav:
   fixed: true
 
 menu:
-     首页: / || fas fa-home
-     音乐: /music/ || fas fa-music
-     电影: /movies/ || fas fa-video
+    首页: / || fas fa-home
+    列表||fas fa-list:
+      音乐: /list/music/ || fas fa-music
+      电影: /list/movies/ || fas fa-video
   # Home: / || fas fa-home
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
@@ -979,7 +980,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar - Toast Notification
@@ -1042,6 +1043,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+     - <div class="aplayer no-destroy" data-id="9460137328" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     # - <script src="xxxx"></script>
 
 # CDN Settings
